@@ -1,0 +1,41 @@
+{
+  "name": "hardhat-fund-me",
+  "author": "Adkirf by patrick collin",
+  "version": "1.0.0",
+  "devDependencies": {
+    "@chainlink/contracts": "^0.5.1",
+    "@ethersproject/abi": "^5.4.7",
+    "@ethersproject/providers": "^5.4.7",
+    "@nomicfoundation/hardhat-chai-matchers": "^1.0.0",
+    "@nomicfoundation/hardhat-network-helpers": "^1.0.0",
+    "@nomicfoundation/hardhat-toolbox": "^2.0.0",
+    "@nomiclabs/hardhat-ethers": "npm:hardhat-deploy-ethers",
+    "@nomiclabs/hardhat-etherscan": "npm:hardhat-deploy-ethers@^0.3.0-beta.13",
+    "@nomiclabs/hardhat-waffle": "^2.0.3",
+    "@typechain/ethers-v5": "^10.1.0",
+    "@typechain/hardhat": "^6.1.2",
+    "chai": "^4.2.0",
+    "dotenv": "^16.0.3",
+    "ethereum-waffle": "^3.0.0",
+    "ethers": "^5.7.2",
+    "hardhat": "^2.12.6",
+    "hardhat-deploy": "^0.11.22",
+    "hardhat-gas-reporter": "^1.0.8",
+    "prettier": "^2.8.2",
+    "prettier-plugin-solidity": "^1.1.1",
+    "solidity-coverage": "^0.8.0",
+    "typechain": "^8.1.0"
+  },
+  "dependencies": {
+    "solhint": "^3.3.7"
+  },
+
+  "scripts": {
+    "test": "yarn hardhat test",
+    "test:stagging": "yarn hardhat test --network goerli",
+    "lint": "yarn solhint 'contracts/*.sol",
+    "lint:fix": "yarn solhint 'contracts/*.sol --fix",
+    "format": "yarn prettier --write .",
+    "coverage": "yarn hardhat coverage"
+  }
+}
